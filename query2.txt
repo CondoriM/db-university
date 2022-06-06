@@ -7,4 +7,8 @@
 
 #QUERY JOINS
 
--ES1: 
+-ES1: SELECT `students`.`name`,`students`.`fiscal_code`,`students`.`date_of_birth` FROM `students` JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+-ES2: SELECT `degrees`.`name`,`degrees`.`level`,`degrees`.`department_id` FROM `degrees` JOIN `departments` ON `departments`.`id` = `degrees`.`department_id` WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
+-ES3: SELECT `courses`.`id`,`courses`.`name` FROM `courses` JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id` WHERE `course_teacher`.`teacher_id` = '44';
+-ES4: SELECT `students`.`name`,`students`.`surname`,`students`.`fiscal_code`,`degrees`.`name`,`degrees`.`department_id` FROM `students` JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` ORDER BY `students`.`name` ASC,`students`.`surname` ASC;
+-ES5: 
