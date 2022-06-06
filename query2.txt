@@ -1,0 +1,10 @@
+#GROUP BY
+
+-ES1: SELECT COUNT(`id`) as `students_number` , `enrolment_date` FROM `students` GROUP BY `enrolment_date` ORDER BY `enrolment_date` ASC;
+-ES2: SELECT COUNT(`id`) as `teachers_number` , `office_address` FROM `teachers` GROUP BY `office_address` ORDER BY `teachers_number` ASC;
+-ES3: SELECT AVG(`vote`) AS `media_vote`, `exam_id` FROM `exam_student` GROUP BY `exam_id` ORDER BY `exam_id` ASC;
+-ES4: SELECT count(`id`) AS `degrees`, `department_id` FROM `degrees` GROUP BY `department_id` ORDER BY `department_id` ASC;
+
+#QUERY JOINS
+
+-ES1: 
