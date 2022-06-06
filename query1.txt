@@ -1,0 +1,4 @@
+ES1: SELECT * FROM `students` WHERE year(`date_of_birth`) = 1990;
+ES2: SELECT * FROM `courses` WHERE `cfu` > 10;
+ES3: SELECT * FROM `students` WHERE year(CURDATE()) - year(`date_of_birth`) > 30;
+ES4: 
